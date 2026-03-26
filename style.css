@@ -1,9 +1,9 @@
 body{
     margin: 0px;
     height: 100dvh;
-    background-image: url(img/hata.jpg);
-    background-repeat: repeat;
-    background-size: 40%;
+    background-image: url(img/tesco.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
