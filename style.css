@@ -133,6 +133,10 @@ footer{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.61);
 }
 
+.iras input[type="number"]{
+    width: 15%;
+}
+
 .iras input[type="submit"]{
     font-family: "DynaPuff", system-ui;
     font-size: 1rem;
