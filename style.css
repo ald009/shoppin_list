@@ -31,6 +31,10 @@ header h1{
     margin: 10px;
 }
 
+header h2{
+    text-align: center;
+}
+
 span:hover{
     cursor:pointer;
 }
@@ -125,6 +129,11 @@ footer{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.61);
 }
 
+.iras input::placeholder{
+    overflow: visible;
+    font-size: 1rem;
+}
+
 .iras select{
     font-family: "DynaPuff", system-ui;
     font-size: 1rem;
@@ -138,6 +147,10 @@ footer{
 
 .iras input[type="number"]{
     width: 15%;
+}
+
+.iras input[type="text"]{
+    width: 20%;
 }
 
 .iras input[type="submit"]{
@@ -183,5 +196,10 @@ footer{
         padding: 4px;
         margin: 0px;
     }
+
+    .iras input::placeholder{
+   
+    font-size: 0.7rem;
+}
    
 }
