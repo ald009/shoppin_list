@@ -10,11 +10,12 @@ form.addEventListener("submit", function(e) {
     const price = form.elements["price"].value;
     const many = form.elements["many"].value;
 
-    let adat = {
-        nev: name,
-        ar: price,
-        db: many
-    };
+   let adat = {
+    nev: name,
+    ar: price,
+    db: many,
+    vasarolva: false
+};
 
     lista.push(adat);
 
@@ -25,6 +26,7 @@ form.addEventListener("submit", function(e) {
 function megjelenit() {
     const osszegH3 = document.getElementById("osszeg");
     listaDiv.innerHTML = "";
+    
 
     let osszeg = 0;
 
@@ -36,11 +38,20 @@ function megjelenit() {
         let div = document.createElement("div");
 
         let szoveg = document.createElement("span");
-        szoveg.textContent =
-            lista[i].nev + " - " +
-            lista[i].ar + " Ft/pcs - " +
-            lista[i].db + "  : " +
-            termekOsszeg + " Ft";
+szoveg.textContent =
+    lista[i].nev + " - " +
+    lista[i].ar + " Ft/db - " +
+    lista[i].db + " db : " +
+    termekOsszeg + " Ft";
+
+if (lista[i].vasarolva) {
+    szoveg.style.textDecoration = "line-through";
+}
+
+szoveg.addEventListener("click", function() {
+    lista[i].vasarolva = !lista[i].vasarolva;
+    megjelenit();
+});
 
         let btn = document.createElement("button");
         btn.textContent = "Delete";

@@ -31,6 +31,9 @@ header h1{
     margin: 10px;
 }
 
+span:hover{
+    cursor:pointer;
+}
 .egesz{
     display: flex;
     flex-direction: column;
