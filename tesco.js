@@ -39,7 +39,7 @@ function megjelenit() {
         szoveg.textContent =
             lista[i].nev + " - " +
             lista[i].ar + " Ft/pcs - " +
-            lista[i].db + " pcs : " +
+            lista[i].db + "  : " +
             termekOsszeg + " Ft";
 
         let btn = document.createElement("button");
